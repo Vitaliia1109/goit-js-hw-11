@@ -8,7 +8,8 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 export function showError(message) {
     iziToast.error({
         title: 'Error',
-        message: message
+        message: message,
+        position: "topRight"
     });
 }
 
