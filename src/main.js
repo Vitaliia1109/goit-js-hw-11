@@ -22,9 +22,10 @@ form.addEventListener('submit', (event) => {
     searchImages(query)
         .then(images => {
             if (images.length === 0) {
+                clearGallery();
                 showError('Sorry, there are no images matching your search query. Please try again!');
             } else {
-                clearGallery();
+                clearGallery(); 
                 renderImages(images);
             }
         })
